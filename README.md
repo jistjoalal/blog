@@ -1,7 +1,8 @@
-# Gatsby bootcamp
+# Gatsby Blog
 
-Andrew Mead's [Great Gatsby Bootcamp](https://www.youtube.com/watch?v=8t0vNu2fCCM)
+A simple [Gatsby](https://gatsbyjs.org) blog.
 
-## notes
+## dev notes / todos
 
-[notes.md](https://github.com/jistjoalal/gatsby-bootcamp/blob/master/notes.md)
+- customize homepage and link to most recent posts
+- make a real post!

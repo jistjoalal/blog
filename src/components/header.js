@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import headerStyles from "./header.module.css"
+import styles from "./header.module.css"
 
 const NavLink = ({ children, to }) => (
   <Link
-    className={headerStyles.navItem}
-    activeClassName={headerStyles.activeNavItem}
+    className={styles.navItem}
+    activeClassName={styles.activeNavItem}
     to={to}
   >
     {children}
@@ -14,7 +14,7 @@ const NavLink = ({ children, to }) => (
 )
 
 export default () => {
-  const data = useStaticQuery(graphql`
+  const title = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
@@ -22,25 +22,19 @@ export default () => {
         }
       }
     }
-  `)
+  `).site.siteMetadata.title
 
   return (
-    <header className={headerStyles.header}>
+    <header className={styles.header}>
       <h1>
-        <Link className={headerStyles.title} to="/">
-          {data.site.siteMetadata.title}
+        <Link className={styles.title} to="/">
+          {title}
         </Link>
       </h1>
       <nav>
-        <ul className={headerStyles.navList}>
+        <ul className={styles.navList}>
           <li>
             <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
             <NavLink to="/blog">Blog</NavLink>

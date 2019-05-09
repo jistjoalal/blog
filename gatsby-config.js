@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Blog",
+    title: "Jist Blog",
     author: "Jist",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-filesystem",
       options: {
