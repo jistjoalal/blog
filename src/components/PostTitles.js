@@ -1,29 +1,9 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
-import styles from "./PostTitles.module.css"
+import Posts from "../queries/posts"
 
 import PostTitle from "./PostTitle"
 
-export default () => {
-  const posts = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(limit: 3) {
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-              date
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `).allMarkdownRemark.edges
+import styles from "./PostTitles.module.css"
 
-  return <ul className={styles.posts}>{posts.map(PostTitle)}</ul>
-}
+export default () => <ul className={styles.posts}>{Posts().map(PostTitle)}</ul>

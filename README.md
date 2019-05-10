@@ -4,4 +4,6 @@ A simple [Gatsby](https://gatsbyjs.org) blog.
 
 ## dev notes / todos
 
-- make a real post!
+- add source code to header links
+- write up on how to make this blog!
+- finish kata post

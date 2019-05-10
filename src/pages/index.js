@@ -1,25 +1,13 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+
+import Posts from "../queries/posts"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
 import PostTitle from "../components/PostTitle"
 
 export default () => {
-  const latestPost = useStaticQuery(graphql`
-    {
-      markdownRemark {
-        id
-        frontmatter {
-          title
-          date
-        }
-        fields {
-          slug
-        }
-      }
-    }
-  `).markdownRemark
+  const latestPost = Posts()[0].node
   return (
     <Layout>
       <Head title="Home" />
