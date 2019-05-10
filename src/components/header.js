@@ -44,6 +44,7 @@ export default () => {
               className={styles.navItem}
               href="https://github.com/jistjoalal/blog"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github
             </a>
