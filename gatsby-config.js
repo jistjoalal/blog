@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Jist Blog",
+    title: "Jist",
     author: "Jist",
   },
   plugins: [

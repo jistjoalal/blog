@@ -16,7 +16,9 @@ export default () => {
 
   return (
     <footer className={styles.footer}>
-      <p>Created by {author} - © 2019</p>
+      <p>
+        Created by {author} - © {new Date().getFullYear()}
+      </p>
     </footer>
   )
 }
