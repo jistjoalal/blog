@@ -8,4 +8,4 @@ Check it out [here](https://jist.netlify.com/)!
 
 - paginate posts
 - write up on how to make this blog!
-- finish kata post
+- home link in footer
