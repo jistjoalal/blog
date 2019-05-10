@@ -39,6 +39,15 @@ export default () => {
           <li>
             <NavLink to="/blog">Blog</NavLink>
           </li>
+          <li>
+            <a
+              className={styles.navItem}
+              href="https://github.com/jistjoalal/blog"
+              target="_blank"
+            >
+              Github
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
