@@ -31,17 +31,17 @@ In programming terms, write a function with the following i/o:
 
 ### Output
 
-- $[[x1, y1], [x2, y2], ..., [xn, yn]]$: List of tuples, $xn$ and $yn$ that solve our equation.
+- $[[x_1, y_1], [x_2, y_2], ..., [x_i, y_i]]$: List of tuples, $x_i$ and $y_i$ that solve our equation.
 
 ## The solution
 
 Factoring, we know
 
 $$
-x^2 - 4y^2 = (x - 2y) * (x + 2y) = n
+x^2 - 4y^2 = (x - 2y)(x + 2y) = n
 $$
 
-Suppose $n = a * b$, then $a$ and $b$ are both factors of $n$. So we can call $a = (x - 2y)$ and $b = (x + 2y)$. Because $n = ab$, then $b = n / a$. So now we have:
+Suppose $n = ab$, then $a$ and $b$ are both factors of $n$. So we can call $a = (x - 2y)$ and $b = (x + 2y)$. Because $n = ab$, then $b = n / a$. So now we have:
 
 $$
 a = (x - 2y)
