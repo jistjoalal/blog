@@ -14,4 +14,16 @@ Andrew Mead is a Udemy teacher who makes Web Development courses. His Gatsby Boo
 3. [React](https://reactjs.org)
 4. [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
-I intend to use the blog to write succinct articles about learning, web development, and computer science. One thing I will do shortly is a write up on how this very blog was developed. **TODO** link that post here once it's created.
+I intend to use the blog to write succinct articles about learning, web development, and computer science. Here are some articles I intend to write, I will try to remember to link them once they are written:
+
+- [an introduction to the JAM Stack](/blog/jamstack)
+- a write up on how this very blog was developed
+- deploying Meteor to heroku
+- Meteor mobile app dev/publishing
+- Meteor S3 Storage w/ Slingshot
+- Express + GraphQL API
+- Rails + GraphQL API
+- HTTPS on AWS Elastic Beanstalk
+- making a site PWA ready
+- Serial/Parallel extreme web scraping
+- Learning Prisma

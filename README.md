@@ -9,3 +9,5 @@ Check it out [here](https://jist.netlify.com/)!
 - paginate posts
 - write up on how to make this blog!
 - home link in footer
+- PWA
+- post tags
