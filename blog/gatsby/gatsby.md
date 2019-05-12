@@ -5,7 +5,7 @@ date: "2019-05-07"
 
 I just followed Andrew Mead's [Great Gatsby Bootcamp](https://www.youtube.com/watch?v=8t0vNu2fCCM) and now I have a blog.
 
-![Grass](./grass.png)
+![Gatsby](./gatsby.png)
 
 Andrew Mead is a Udemy teacher who makes Web Development courses. His Gatsby Bootcamp got me started with a basic blog using the following technologies:
 
