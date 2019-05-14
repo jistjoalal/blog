@@ -17,7 +17,7 @@ Andrew Mead is a Udemy teacher who makes Web Development courses. His Gatsby Boo
 I intend to use the blog to write succinct articles about learning, web development, and computer science. Here are some articles I intend to write, I will try to remember to link them once they are written:
 
 - [an introduction to the JAM Stack](/blog/jamstack)
-- a write up on how this very blog was developed
+- [a write up on how this very blog was developed](/blog/blog)
 - deploying Meteor to heroku
 - Meteor mobile app dev/publishing
 - Meteor S3 Storage w/ Slingshot

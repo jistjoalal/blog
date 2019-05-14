@@ -7,7 +7,6 @@ Check it out [here](https://jist.netlify.com/)!
 ## dev notes / todos
 
 - paginate posts
-- write up on how to make this blog!
-- home link in footer
 - PWA
-- post tags
+- post tags (possible in markdown?)
+- generate table of contents for each post
