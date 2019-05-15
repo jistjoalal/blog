@@ -1,56 +1,25 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
+
+import Title from "../queries/title"
+
+import NavLink from "./NavLink"
 
 import styles from "./header.module.css"
 
-const NavLink = ({ children, to }) => (
-  <Link
-    className={styles.navItem}
-    activeClassName={styles.activeNavItem}
-    to={to}
-  >
-    {children}
-  </Link>
+export default () => (
+  <header className={styles.header}>
+    <h1>
+      <Link className={styles.title} to="/">
+        {Title()}
+      </Link>
+    </h1>
+    <nav>
+      <ul className={styles.navList}>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="https://github.com/jistjoalal/blog">Github</NavLink>
+      </ul>
+    </nav>
+  </header>
 )
-
-export default () => {
-  const title = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `).site.siteMetadata.title
-
-  return (
-    <header className={styles.header}>
-      <h1>
-        <Link className={styles.title} to="/">
-          {title}
-        </Link>
-      </h1>
-      <nav>
-        <ul className={styles.navList}>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/blog">Blog</NavLink>
-          </li>
-          <li>
-            <a
-              className={styles.navItem}
-              href="https://github.com/jistjoalal/blog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  )
-}
