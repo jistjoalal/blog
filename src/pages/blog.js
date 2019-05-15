@@ -7,7 +7,7 @@ import PostTitles from "../components/PostTitles"
 export default () => (
   <Layout>
     <Head title="Blog" />
-    <h1>blog</h1>
+    <h1>Blog</h1>
     <PostTitles />
   </Layout>
 )
