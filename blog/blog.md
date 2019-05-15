@@ -16,7 +16,7 @@ Gatsby is a web framework for generating JAMStack-ready static files. It uses Re
 
 Gatsby has a whole library of [starters](https://www.gatsbyjs.org/starters/?v=2). Clone one to get started w/ a new project.
 
-```sh
+```bash
 gatsby new gatsby-bootcamp https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
@@ -47,7 +47,7 @@ npm i --save-dev env-cmd
 
 ### 1. serve markdown files over graphql
 
-```sh
+```bash
 npm i --save-dev gatsby-source-filesystem gatsby-transformer-remark
 ```
 
@@ -168,7 +168,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
 ### 4. render images in markdown pages
 
-```sh
+```bash
 npm i gatsby-plugin-sharp gatsby-remark-images gatsby-remark-relative-images
 ```
 
@@ -202,7 +202,7 @@ In source markdown file, specify path relative to the markdown file:
 
 ## use SCSS w/ gatsby
 
-```sh
+```bash
 npm install --save node-sass gatsby-plugin-sass
 ```
 
@@ -225,7 +225,7 @@ export default () => <h1 className={styles.header}>Hooray</h1>
 
 ## markdown syntax highlighting using [prismjs](https://prismjs.com/)
 
-```sh
+```bash
 npm install --save gatsby-remark-prismjs prismjs
 ```
 
