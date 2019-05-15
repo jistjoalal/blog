@@ -18,7 +18,7 @@ I intend to use the blog to write succinct articles about learning, web developm
 
 - [an introduction to the JAM Stack](/blog/jamstack)
 - [a write up on how this very blog was developed](/blog/blog)
-- deploying Meteor to heroku
+- [deploying Meteor to heroku](/blog/meteor-heroku)
 - Meteor mobile app dev/publishing
 - Meteor S3 Storage w/ Slingshot
 - Express + GraphQL API
