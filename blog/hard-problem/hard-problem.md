@@ -153,4 +153,4 @@ The fun part was pushing this algorithm beyond it's initial sluggish maximum cal
 - avoiding newish syntax like destructuring
 - praying to the one true god, RNGesus
 
-I'll link that post here when I write it. That really was the fun part and led to some interesting insights.
+[Here's part II](/blog/decisions-are-bad)
