@@ -1,10 +1,21 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
-import Title from "../queries/title"
+export default ({ title }) => {
+  const siteTitle = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `).site.siteMetadata.title
 
-export default ({ title }) => (
-  <Helmet>
-    <title>{`${Title()} | ${title}`}</title>
-  </Helmet>
-)
+  return (
+    <Helmet>
+      <title>{`${siteTitle} | ${title}`}</title>
+    </Helmet>
+  )
+}
