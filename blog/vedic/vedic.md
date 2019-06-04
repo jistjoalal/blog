@@ -251,7 +251,7 @@ It was bad. So bad it needed a horrible ugly video showcasing just how bad it wa
 
 <video controls src="https://i.imgur.com/GdsAIhj.mp4"> </video>
 
-Yeah. We're multiplying by zero. Like a billion times. So let's not do that and see what happens:
+Yeah. We're adding zero. Like a billion times. So let's not do that and see what happens:
 
 ```js
 // in "mult", we had this line:
