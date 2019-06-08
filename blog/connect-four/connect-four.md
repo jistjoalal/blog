@@ -37,7 +37,7 @@ This kata is only 4 kyu, and apparently I'm getting better because my initial pl
 ```js
 /**
  * Connect Four - 4kyu
- * whoIsWinner(moves)
+ * run(moves)
  * - Input: ["A_Red", "B_Yellow", ... ]
  * - Output: 'Red', 'Yellow', or 'Draw'
  * implementation:
@@ -75,7 +75,7 @@ I settled on modelling the grid as an array of strings, each representing a colu
 grid = ["YRY", "RYRY", "RRRY", "YYYR", "RYR", "YRR", "YRYR"]
 ```
 
-It might seem confusing since strings print horizontally, but I can assure you all the information is there! Since we insert a piece based on the row alone, it will be convenient for our insert function to simply append the next move to a certain column.
+It might seem confusing since strings print horizontally, but I can assure you all the information is there! Since we insert a piece based on the column alone, it will be convenient for our insert function to simply append the next move to a certain column.
 
 Also, here is my beloved $rng$ function that I rewrite almost every day. It's the one thing tempting me back to python xD
 
@@ -85,7 +85,7 @@ const rng = n => [...Array(n).keys()]
 
 ## Let's Play!
 
-Our insert function takes a single move from our input list, along with the current grid, and outputs the new grid. Remember this is what a "move" looks like:
+Our insert function does just that, inserts a piece into the grid. Remember this is what a "move" looks like:
 
 ```js
 "A_Yellow" // inserts yellow piece into first column
