@@ -139,7 +139,7 @@ Musashi was a legend, not only due to his fighting skills, but because of his mo
 
 ## The Shoulders of Giants
 
-We stand on the shoulders of giants. Not just because we have clean, running water and heated homes. Not simply because we have access to more power and information than we can even make sense of. We stand on the shoulders of warriors, fighters, legends. How could we have evolved out of the harsh, cruel animal world if not, at some point, the man with the biggest, baddest sword **didn't use it**?
+We stand on the shoulders of giants. Not just because we have clean, running water and heated homes. Not simply because we have access to more power and information than we can even make sense of. We stand on the shoulders of warriors, fighters, legends. How could we have ever evolved out of the harsh, cruel animal world if not, at some point, the man with the biggest, baddest sword **didn't use it**?
 
 I like to think of Musashi's greatest battle as one of the first of it's kind. **A new kind of battle**. Legends don't fight with their fists or their swords, **they fight with their minds**. Musashi's restraint was not an act of mercy or righteousness. It was an act of wit. He didn't just let his opponent go free. He defeated him. No sword required.
 
@@ -154,3 +154,5 @@ Which will be defined as follows:
 > The art or skill of wielding a mind
 
 And just as the most fearsome warrior's sword is not the sharpest, but the most worn, so it is with his mind.
+
+[Go play](https://codewars.com)
