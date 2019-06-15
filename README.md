@@ -2,6 +2,8 @@
 
 A simple [Gatsby](https://gatsbyjs.org) blog.
 
+[![Screenshot](https://jist-screenshotter.herokuapp.com/desktop/https://jist-blog.netlify.com/)](https://jist-blog.netlify.com/)
+
 ## Getting Started
 
 This project can be easily cloned and used as a blog. Simply fill the `blog` folder with markdown blog posts, each with a title and ISO-8601 date in the frontmatter.
