@@ -2,7 +2,7 @@
 
 A simple [Gatsby](https://gatsbyjs.org) blog.
 
-[![Screenshot](https://jist-screenshotter.herokuapp.com/desktop/https://jist-blog.netlify.com/)](https://jist-blog.netlify.com/)
+[![Screenshot](https://jist-screenshotter.herokuapp.com/v1/desktop/https://jist-blog.netlify.com/)](https://jist-blog.netlify.com/)
 
 ## Getting Started
 
