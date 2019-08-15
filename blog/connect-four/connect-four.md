@@ -3,6 +3,8 @@ title: "Connect Four"
 date: "2019-06-08T01:07:53.018Z"
 ---
 
+[Source Code](https://github.com/jistjoalal/connect-four)
+
 Let's play Connect Four! Remember this game?
 
 ![game](./game.jpg)
@@ -126,9 +128,7 @@ $checkRow$ is the heart of our program, it takes a row and returns the win condi
 
 ```js
 const checkRow = row =>
-    /RRRR/.test(row) ? "Red"
-  : /YYYY/.test(row) ? "Yellow"
-  : false
+  /RRRR/.test(row) ? "Red" : /YYYY/.test(row) ? "Yellow" : false
 ```
 
 Simple! Obviously to check rows (horizontal) we just feed our grid in one row at a time. Columns and diagonals are more complicated, but let's **make them look like rows** so we can use the same check function!
@@ -139,11 +139,7 @@ We need a function to "rotate" our grid 90 degrees and the rows will be equivale
 
 ```js
 const cols = g =>
-  rng(6).map((_, i) => 
-    rng(7).map((_, j) => 
-      g[j][i] || 0
-    ).join``
-  )
+  rng(6).map((_, i) => rng(7).map((_, j) => g[j][i] || 0).join``)
 ```
 
 ## Diagonals
@@ -155,30 +151,40 @@ Ok, here's the fun part. Because some of the diagonals aren't even four long, we
 The green (left-up) paths are the ones I tackled first. There's obviously three of them, and they are 4, 5, and 6 long. At each step along the path, we move up 1 and left 1. At each new path, we move right one. These are all arbitrary but it's just how I broke it down.
 
 ```js
-const lu = rng(3).map(i =>  // 3 paths
-  rng(4 + i).map(o =>       // 4,5,6 long
-     g[3 + i - o][o] || 0   // each step:
-                            //   -o (x) = move left
-                            //   +o (y) = move up
-                            // each path:
-                            //   +i (x) = move right
-  ).join``
+const lu = rng(3).map(
+  (
+    i // 3 paths
+  ) =>
+    rng(4 + i).map(
+      (
+        o // 4,5,6 long
+      ) => g[3 + i - o][o] || 0 // each step:
+      //   -o (x) = move left
+      //   +o (y) = move up
+      // each path:
+      //   +i (x) = move right
+    ).join``
 )
 ```
 
-*Note:* we fill blanks with zero to avoid false positives and join as strings to emulate our original grid.
+_Note:_ we fill blanks with zero to avoid false positives and join as strings to emulate our original grid.
 
 Cool! Let's go after the blue (right-up) paths with a similar strategy:
 
 ```js
-const ru = rng(3).map(i =>  // 3 paths
-  rng(6 - i).map(o =>       // 6,5,4 long
-    g[1 + i + o][o] || 0    // each step:
-                            //   +o (x) = move right
-                            //   +o (y) = move up
-                            // each path:
-                            //   +i (x) = move right
-  ).join``
+const ru = rng(3).map(
+  (
+    i // 3 paths
+  ) =>
+    rng(6 - i).map(
+      (
+        o // 6,5,4 long
+      ) => g[1 + i + o][o] || 0 // each step:
+      //   +o (x) = move right
+      //   +o (y) = move up
+      // each path:
+      //   +i (x) = move right
+    ).join``
 )
 ```
 
@@ -199,13 +205,10 @@ const diags = g => {
 Symmetry is the best. Our world would still be a big bang soup of radiation without it. Let's flip our grid and run our diagonal algorithms again to get the remaining paths.
 
 ```js
-const flip = g =>
-  g.map(r =>
-    [...r.padEnd(6, 0)].reverse().join``
-  )
+const flip = g => g.map(r => [...r.padEnd(6, 0)].reverse().join``)
 ```
 
-*Note*: We pad the end of our columns to ensure they're aligned properly after the flip.
+_Note_: We pad the end of our columns to ensure they're aligned properly after the flip.
 
 And now we have **all** possible diagonal paths through our grid. It's as easy as gluing our black boxes together.
 
