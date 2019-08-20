@@ -3,6 +3,8 @@ title: "A Traumatic Memory"
 date: "2019-05-27T02:50:56.867Z"
 ---
 
+[Source Code](https://github.com/jistjoalal/icemaze)
+
 We're onto the next CodeWars challenge! This time we're taking on kata written by the notorious Voile--the best coder and kata author on CodeWars as far as I can tell. Here's the intro to the kata:
 
 > Any youngster Joeys should probably know what this image means, and why it is traumatic:
